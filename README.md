@@ -1,4 +1,4 @@
-<img src="https://github.com/DespairP/Kaede/blob/master/src/main/resources/logo.png" alt="Kaede" height="30%" style="margin: 0px auto" align="center"/>
+<img src="https://github.com/DespairP/Kaede/blob/master/src/main/resources/logo.png" alt="Kaede" width="30%" style="margin: 0px auto" align="center"/>
 <br/>Kaede
 
 ----
