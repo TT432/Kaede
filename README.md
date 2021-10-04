@@ -19,4 +19,7 @@
   - 多选 CheckBox
   - 组 Group
   - 合成表 CraftingTable
-    -  自定义合成表 CustomCraftingTable
+    - 自定义合成表 CustomCraftingTable
+  - 图片 img
+- 无生命周期组件：
+  - 开发中...
