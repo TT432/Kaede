@@ -10,8 +10,8 @@ public interface ILifeCycleComponent extends IComponent {
     /**当组件被init的时候会调用这个方法*/
     public void onCreate();
 
-    /**当组件被render时会调用这个方法,注意是每次render完之后会调用这个方法*/
-    public default void afterRender(){}
+    /**当组件被render时会调用这个方法*/
+    public default void onRender(){}
 
     /**当组件被隐藏起来的时候会调用这个方法*/
     public default void onHide(){}
