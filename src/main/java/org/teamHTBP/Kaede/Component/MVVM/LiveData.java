@@ -4,6 +4,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Observer;
 
+/**
+ * 可被观察的实例</pre>
+ * 使用{@code Live}
+ * */
 public class LiveData<T> {
     T data;
 
@@ -22,4 +26,5 @@ public class LiveData<T> {
         this.data = newData;
         observerList.forEach(tiObserver -> tiObserver.onChanged(newData));
     }
+
 }
