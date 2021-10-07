@@ -1,7 +1,10 @@
 package org.teamHTBP.Kaede.Component.MVVM.LifeCycle;
 
-import org.teamHTBP.Kaede.Component.MVVM.ViewModelContext;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import org.teamHTBP.Kaede.Component.MVVM.ViewModel.ViewModelContext;
 
+@OnlyIn(Dist.CLIENT)
 public interface IViewModelContextHolder {
     public ViewModelContext getViewModelContext();
 }

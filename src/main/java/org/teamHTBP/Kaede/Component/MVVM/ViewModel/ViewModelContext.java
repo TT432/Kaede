@@ -1,9 +1,8 @@
-package org.teamHTBP.Kaede.Component.MVVM;
+package org.teamHTBP.Kaede.Component.MVVM.ViewModel;
 
 import net.minecraft.util.text.ITextComponent;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import org.teamHTBP.Kaede.Component.LifeCycleComponent.AbstractLifeCycleScreen;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

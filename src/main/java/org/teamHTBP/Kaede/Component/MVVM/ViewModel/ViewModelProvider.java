@@ -1,4 +1,4 @@
-package org.teamHTBP.Kaede.Component.MVVM;
+package org.teamHTBP.Kaede.Component.MVVM.ViewModel;
 
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
