@@ -19,7 +19,7 @@ import java.util.List;
  * 所有的生命周期都可以通过{@link LifeCycle.Stage}看到:<br/>
  * <pre>
  * 生命周期具体为：
- * beforeInit（该类被实例化，调用init前）{@link ILifeCycleComponent#beforeInit() } <br/>
+ * beforeInit（该类被实例化，调用init前）{@link ILifeCycleComponent#onCreate() } <br/>
  * -> init（Screen被调用init时）{@link ILifeCycleComponent#init() } <br/>
  * -> render（Screen每次被渲染时）{@link ILifeCycleComponent#onRender()}<br/>
  * -> *hide （Screen被隐藏时，需要手动实现调用）{@link ILifeCycleComponent#onHide()}<br/>
@@ -46,8 +46,8 @@ public abstract class AbstractLifeCycleScreen extends Screen implements ILifeCyc
         super(titleIn);
         context = new ViewModelContext();
         lifeCycle = new LifeCycleManager(this);
-        beforeInit();
         lifeCycle.markStage(LifeCycle.Stage.CREATE);
+        onCreate();
     }
 
     /**

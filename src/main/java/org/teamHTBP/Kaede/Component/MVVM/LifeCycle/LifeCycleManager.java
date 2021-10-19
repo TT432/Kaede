@@ -33,9 +33,17 @@ public class LifeCycleManager extends LifeCycle{
 
     }
 
+    @Override
+    public void removeObserver(ILifeCycleObserver observer) {
+        observers.remove(observer);
+        System.out.println("one observer:"+ observer.hashCode() +" is removed!");
+    }
+
+
     public void markStage(Stage stage){
         this.stage = stage;
     }
+
 
 
     private void notifyObservers(){

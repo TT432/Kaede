@@ -9,7 +9,7 @@ import org.teamHTBP.Kaede.Component.MVVM.IObserver;
  * 有生命周期的组件接口
  * 所有的生命周期都可以通过{@link LifeCycle.Stage}看到<br/>
  * 生命周期具体回调方法为：
- * beforeInit {@link ILifeCycleComponent#beforeInit() } <br/>
+ * beforeInit {@link ILifeCycleComponent#onCreate() } <br/>
  * -> init  {@link ILifeCycleComponent#init() } <br/>
  * -> render  {@link ILifeCycleComponent#onRender()}<br/>
  * -> *hide {@link ILifeCycleComponent#onHide()}<br/>
@@ -18,7 +18,7 @@ import org.teamHTBP.Kaede.Component.MVVM.IObserver;
 @OnlyIn(Dist.CLIENT)
 public interface ILifeCycleComponent extends IComponent {
     /**在组件在初始化之前会调用这个方法*/
-    public default void beforeInit(){}
+    public default void onCreate(){}
 
     /**当组件被init的时候会调用这个方法*/
     public default void init(){}

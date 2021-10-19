@@ -4,17 +4,17 @@ import org.teamHTBP.Kaede.Component.MVVM.LifeCycle.ILifeCycleComponent;
 import org.teamHTBP.Kaede.Component.MVVM.LifeCycle.ILifeCycleObserver;
 import org.teamHTBP.Kaede.Component.MVVM.LifeCycle.LifeCycle;
 
-public class ObserverWithState implements ILifeCycleObserver {
-    private final ILifeCycleComponent owner;
-    private IObserver<?> observer;
+public class ObserverWithState {
+    LifeCycle.Stage stage;
+    ILifeCycleObserver lifeCycleObserver;
 
-    public ObserverWithState(ILifeCycleComponent owner,IObserver<?> observer) {
-        this.owner = owner;
-        this.observer = observer;
+    public ObserverWithState(ILifeCycleObserver observer, LifeCycle.Stage stage){
+        this.lifeCycleObserver = observer;
+        this.stage = stage;
     }
 
-    @Override
-    public void onStageChanged(ILifeCycleComponent source, LifeCycle.LifeEvent event) {
+    protected void dispathEvent(ILifeCycleComponent owner, LifeCycle.Stage stage){
 
     }
+
 }
