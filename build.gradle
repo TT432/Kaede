@@ -1,3 +1,7 @@
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
 buildscript {
     repositories {
         maven { url = 'https://files.minecraftforge.net/maven' }
@@ -26,7 +30,7 @@ minecraft {
     mappings channel: 'snapshot', version: '20210309-1.16.5'
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 
-    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
     // Default run configurations.
     // These can be tweaked, removed, or duplicated as needed.
