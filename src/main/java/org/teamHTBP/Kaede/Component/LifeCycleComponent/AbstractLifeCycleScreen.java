@@ -84,6 +84,7 @@ public abstract class AbstractLifeCycleScreen extends Screen implements ILifeCyc
         super.onClose();
     }
 
+    @Override
     public ViewModelContext getViewModelContext(){
         return this.context;
     }
