@@ -5,7 +5,6 @@ tasks.withType(JavaCompile) {
 buildscript {
     repositories {
         maven { url = 'https://files.minecraftforge.net/maven' }
-        jcenter()
         mavenCentral()
     }
     dependencies {
@@ -19,7 +18,7 @@ group = 'org.teamHTBP'
 version = '1.0-SNAPSHOT'
 archivesBaseName = 'kaede'
 
-sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
+java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
 minecraft {
     // The mappings can be changed at any time, and must be in the following format.
